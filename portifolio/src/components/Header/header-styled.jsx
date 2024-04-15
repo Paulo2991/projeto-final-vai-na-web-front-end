@@ -2,10 +2,10 @@ import styled, {createGlobalStyle} from "styled-components";
 
 export const GlobalStyled = createGlobalStyle`
    *{
-     margin:0;
-     padding:0;
+     margin: 0;
+     padding: 0;
      box-sizing: border-box;
-     border:0;
+     border: 0;
      font-family: "Arial",sans-serif;
      font-size: 42.6%;  
      list-style-type: none;
@@ -14,19 +14,23 @@ export const GlobalStyled = createGlobalStyle`
 `;
 
 export const Header = styled.header`
-  height: 100px;
-  padding: 0 2%;
-  margin: 0 auto;
+  height: 15vh;
+  padding: 0 1%;
+  margin: auto;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
   background-color: blue;
+
+  @media screen and (max-width: 600px) {
+    width: 174%;
+  }
 `;
 
 export const Foto = styled.img`
-  width: 100px;
+  width: 80px;
   border-radius: 50%;
 `;
 
@@ -38,7 +42,14 @@ export const Ul = styled.ul`
 export const Li = styled.li`
   font-size: 60px;
   font-weight: 30px;
-  color: white;
+  a{
+    color: white;
+  }
+
+  a:hover{
+    color: #508896;
+  }
 `;
+
 
 

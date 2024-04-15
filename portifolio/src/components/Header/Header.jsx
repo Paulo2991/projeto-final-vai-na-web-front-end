@@ -1,28 +1,36 @@
 import * as S from "./header-styled.jsx";
-import foto from "../../assets/react.svg";
+import foto from "../../assets/imagempaulo.jpg";
+import {BrowserRouter, Routes, Route, Link} from "react-router-dom";
 
 function Header() {
   return (
     <>
-      <S.Header>
-        <S.Foto src={foto} />
-        <nav>
-          <S.Ul>
-            <S.Li>
-              <a>Home</a>
-            </S.Li>
-            <S.Li>
-              <a>Sobre</a>
-            </S.Li>
-            <S.Li>
-              <a>Projetos</a>
-            </S.Li>
-            <S.Li>
-              <a>Habilidades</a>
-            </S.Li>
-          </S.Ul>
-        </nav>
-      </S.Header>
+      <BrowserRouter>
+        <S.Header>
+          <S.Foto src={foto} />
+          <nav>
+            <S.Ul>
+              <S.Li>
+                <Link to="/">
+                  Home
+                </Link>
+              </S.Li>
+              <S.Li>
+                <Link to="#">Sobre</Link>
+              </S.Li>
+              <S.Li>
+                <Link to="#">Projetos</Link>
+              </S.Li>
+              <S.Li>
+                <Link to="#">Habilidades</Link>
+              </S.Li>
+            </S.Ul>
+          </nav>
+        </S.Header>
+        <Routes>
+          <Route path="/"></Route>
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

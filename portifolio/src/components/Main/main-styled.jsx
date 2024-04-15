@@ -1,31 +1,42 @@
 import styled from "styled-components";
 
 export const Section = styled.section`
-  position: relative;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 8rem;
-  background-color: gray;
-`;
-
-export const Content = styled.div`
-  display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   flex-grow: 1;
-  gap: 3rem;
-  height: calc(100% - 12vh);
-  padding: 3rem 0px;
-`;
+  padding: 8rem 3rem;
+  background-color: #207177;
 
+  h1 {
+    color: white;
+    font-size: 60px;
+    text-align: center;
+  }
+
+  h2 {
+    color: white;
+    font-size: 60px;
+    text-align: center;
+  }
+
+  p {
+    text-indent: 50px;
+    color: white;
+    letter-spacing: 3px;
+  }
+
+  @media screen and (max-width: 600px) {
+    width: 174%;
+  }
+`;
 
 export const Apresentacao = styled.div`
   font-size: 50px;
   text-align: center;
-  font-weight: bold;
+  
 `;
 
 export const Curriculo = styled.a`
@@ -34,4 +45,35 @@ export const Curriculo = styled.a`
    border-radius: 50px;
    background-color: red;
 `;
+
+export const Habilidades = styled.section`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #2c30ff;
+  padding: 10em;
+
+  h1 {
+    color: white;
+    font-size: 46px;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 600px) {
+    width: 174%;
+  }
+`;
+
+export const ContanerImagens = styled.div`
+  display: flex;
+  width: 30%;
+  justify-content: center;
+  gap: 30px;
+  img {
+    width: 90px;
+    height: 90px;
+  }
+`;
+
 
