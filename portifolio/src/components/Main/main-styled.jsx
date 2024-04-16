@@ -52,7 +52,7 @@ export const Habilidades = styled.section`
   align-items: center;
   justify-content: space-evenly;
   background-color: #2c30ff;
-  padding: 10em;
+  padding: 8rem 3rem;
 
   h1 {
     color: white;

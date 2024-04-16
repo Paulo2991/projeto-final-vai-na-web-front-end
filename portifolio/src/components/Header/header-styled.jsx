@@ -14,40 +14,36 @@ export const GlobalStyled = createGlobalStyle`
 `;
 
 export const Header = styled.header`
-  height: 15vh;
-  padding: 0 1%;
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  width: 150px;
   background-color: blue;
-
-  @media screen and (max-width: 600px) {
-    width: 174%;
-  }
+  text-align: center;
 `;
 
 export const Foto = styled.img`
   width: 80px;
-  border-radius: 50%;
+  border-radius: 60%;
+
 `;
 
 export const Ul = styled.ul`
   display: flex;
-  gap: 4rem;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
 `;
 
 export const Li = styled.li`
   font-size: 60px;
   font-weight: 30px;
+  
   a{
     color: white;
   }
 
   a:hover{
-    color: #508896;
+    color: #bd0f0f;
   }
 `;
 
