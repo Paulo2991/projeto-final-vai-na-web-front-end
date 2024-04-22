@@ -69,11 +69,21 @@ export const ContanerImagens = styled.div`
   display: flex;
   width: 30%;
   justify-content: center;
+  align-items: center; 
   gap: 30px;
   img {
     width: 90px;
     height: 90px;
   }
+
+  @media screen and (max-width: 800px) {
+    display: flex;
+    gap: 2rem;
+    img {
+      width: 50px;
+      height: 50px;
+  }
+}
 `;
 
 

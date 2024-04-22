@@ -7,7 +7,7 @@ export const GlobalStyled = createGlobalStyle`
      box-sizing: border-box;
      border: 0;
      font-family: "Arial",sans-serif;
-     font-size: 42.6%;  
+     font-size: 42%;  
      list-style-type: none;
      text-decoration: none;
    }                        
