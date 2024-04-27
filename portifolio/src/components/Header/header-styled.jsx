@@ -21,6 +21,7 @@ export const Header = styled.header`
 
 export const Foto = styled.img`
   width: 80px;
+  margin-top:3px;
   border-radius: 60%;
 
 `;

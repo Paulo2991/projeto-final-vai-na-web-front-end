@@ -1,8 +1,9 @@
 import Header from "../../components/Header/Header";
 import * as S from "./projetos-styled.jsx";
 import restaurante from "../../assets/restaurantehtml.png";
-import biteduca from "../../assets/biteduca.png";
+import nlwExpert from "../../assets/nlwexpert.png";
 import nlw from "../../assets/nlw.png";
+import Carrosel from "react-elastic-carousel";
 
 function Projetos() {
   return (
@@ -10,30 +11,35 @@ function Projetos() {
       <S.Main>
         <Header />
         <S.Section>
-          <S.Cards>
-            <h1>Projetos Em HTML E CSS</h1>
-            <img src={restaurante} />
-            <a
-              href="https://github.com/Paulo2991/ciclo-3-aula-1"
-              target="_black"
-            >
-              Link Do Projeto
-            </a>
-          </S.Cards>
-          <S.Cards>
-            <h1>Projetos Em HTML E CSS</h1>
-            <img src={biteduca}/>
-            <a href="" target="_black">
-              Link Do Projeto
-            </a>
-          </S.Cards>
-          <S.Cards>
-            <h1>Projetos Em HTML E CSS</h1>
-            <img src={nlw}/>
-            <a href="" target="_black">
-              Link Do Projeto
-            </a>
-          </S.Cards>
+          <Carrosel>
+            <S.Cards>
+              <img src={restaurante} />
+              <h1>Projetos</h1>
+              <a
+                href="https://github.com/Paulo2991/ciclo-3-aula-1"
+                target="_black"
+              >
+                Link Do Projeto
+              </a>
+            </S.Cards>
+            <S.Cards>
+              <img src={nlwExpert} />
+              <h1>Projetos</h1>
+              <a href="https://github.com/Paulo2991/nlw-expert" target="_black">
+                Link Do Projeto
+              </a>
+            </S.Cards>
+            <S.Cards>
+              <img src={nlw} />
+              <h1>Projetos</h1>
+              <a
+                href="https://github.com/Paulo2991/projeto-nlw-rochetseat-react"
+                target="_black"
+              >
+                Link Do Projeto
+              </a>
+            </S.Cards>
+          </Carrosel>
         </S.Section>
       </S.Main>
     </>

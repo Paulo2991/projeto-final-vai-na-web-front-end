@@ -30,7 +30,21 @@ export const ContanerImagens = styled.div`
   justify-content: center;
   gap: 30px;
   img {
-    width: 90px;
-    height: 90px;
+    width: 5vw;
+    height: 5vw;
+  }
+
+  .rec.rec-arrow {
+    background-color: green;
+    border-radius: 30%;
+  }
+
+  .rec.rec-arrow:hover {
+    border-radius: 50%;
+    background-color: red;
+  }
+
+  .rec.rec-arrow:disabled {
+    visibility: hidden;
   }
 `;

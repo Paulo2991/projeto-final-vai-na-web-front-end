@@ -50,8 +50,8 @@ export const Habilidades = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
-  background-color: #2c30ff;
+  justify-content: center;
+  background-color: #207177;
   padding: 8rem 3rem;
 
   h1 {
@@ -69,11 +69,26 @@ export const ContanerImagens = styled.div`
   display: flex;
   width: 30%;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   gap: 30px;
+
+  .rec.rec-arrow {
+    background-color: green;
+    border-radius: 30%;
+  }
+
+  .rec.rec-arrow:hover {
+    border-radius: 50%;
+    background-color: red;
+  }
+
+  .rec.rec-arrow:disabled {
+    visibility: hidden;
+  }
+
   img {
-    width: 90px;
-    height: 90px;
+    width: 5vw;
+    height: 5vw;
   }
 
   @media screen and (max-width: 800px) {
@@ -82,8 +97,15 @@ export const ContanerImagens = styled.div`
     img {
       width: 50px;
       height: 50px;
+    }
   }
-}
+
+  @media (max-width: 320px) {
+    img {
+      width: 10vw;
+      height: 10vh;
+    }
+  }
 `;
 
 
