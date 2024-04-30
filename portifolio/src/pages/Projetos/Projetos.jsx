@@ -3,6 +3,7 @@ import * as S from "./projetos-styled.jsx";
 import restaurante from "../../assets/restaurantehtml.png";
 import nlwExpert from "../../assets/nlwexpert.png";
 import nlw from "../../assets/nlw.png";
+import hortifruti from "../../assets/hortifrutivnw.png";
 import Carrosel from "react-elastic-carousel";
 
 function Projetos() {
@@ -34,6 +35,16 @@ function Projetos() {
               <h1>Projetos</h1>
               <a
                 href="https://github.com/Paulo2991/projeto-nlw-rochetseat-react"
+                target="_black"
+              >
+                Link Do Projeto
+              </a>
+            </S.Cards>
+            <S.Cards>
+              <img src={hortifruti} />
+              <h1>Projetos</h1>
+              <a
+                href="https://github.com/Paulo2991/projeto-hotfruti"
                 target="_black"
               >
                 Link Do Projeto
